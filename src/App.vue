@@ -12,11 +12,20 @@
   <Authentication @submit="onLogin" :isAuthenticated="isAuth" />
   <UserList />
   <MortgageCalculator />
+
+  <hr />
+  <p>Семинар от 2023-08-03</p>
+  <hr />
+  <BookList />
+  <br />
+  <MovieList />
 </template>
 
 <script>
 import Authentication from './components/Authentication.vue';
+import BookList from './components/BookList.vue';
 import MortgageCalculator from './components/MortgageCalculator.vue';
+import MovieList from './components/MovieList.vue';
 import UserList from './components/UserList.vue';
 import Hello from './components/hello.vue';
 import kittens from './components/kittens.vue';
@@ -29,6 +38,8 @@ export default {
     Authentication,
     UserList,
     MortgageCalculator,
+    BookList,
+    MovieList,
   },
   data() {
     return {
